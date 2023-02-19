@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  transition: .3s ease;
+}
+
+
+
+/* Colors and Styles (Default) */
+:root{
+  --PrimaryColor: hsl(94, 59%, 35%);
+  --HoverColor: #bdf094;
+  --paleGreen: hsl(96, 75%, 89%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(220, 10%, 94%);
+  --greyText: rgb(190, 190,190);
+  --inputColor: hsl(330, 12%, 97%);
+
+  /* Font and Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+  
+}
+
+/* Default styles */
+html{
+  font-size: 90%;
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+
+}
+
+li{
+  list-style: none;
+}
+
+.icon{
+  font-size: var(--h2FontSize);
+}
+
+.container img{
+  width: 100%;
+  height: auto;
+}
+
+.container flex{ /* flex */
+  display: flex;
+  align-items: center;
+  
+}
+.container{ /* App */
+  text-align: center;
+
+}
+
+.container grid{ /*grid*/
+  display: grid;
+  align-items: center;
+}
+
+.container btn{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--inputColor);
+  padding: .8rem 1rem;
+  color: var(--textColor);
+  
+}
+
+.container btn .icon{
+  margin-left: .5rem;
+ 
+
+}
+
+.container btn:hover{
+  background: var(--paleGreen);
+  color: var(--PrimaryColor)
+}
+
+.container body{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+}
+
+
+.container{
+  position: relative;
+  width: 95vw !important;  
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bgColor);
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 8px var(--greyText);
+}
+
+
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.nav-tabs{
+  border-bottom: 1px solid #fff;
+}
+.nav-tabs .nav-link.active{
+  background-color: #070000;
+  border-color: #ddd #ddd #fff;
+  border-bottom-color: transparent;
+}
+
+.tab-content{
+  padding: 20px;
+}
+.Login{
+  padding-top: 2rem;
+}
+
+.Login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:20px 0;
+  font-size: 14px;
+}
+
+.Login-form input[type="password"]{
+  font-size: inherit;
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-shadow: none;
+  background-color: #fff;
+}
+
+.Login-form input[type="email"]{
+  font-size: inherit;
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-shadow: none;
+  background-color: #fff;
+  
+}
+
+.chatbox{
+  padding-bottom: 50px;
+  border-bottom: solid black;
+
+}
+
+.selected-chatbox{
+  padding-bottom: 50px;
+  border-bottom: solid black;
+  background-color: #61dafb;
+}
+
+.chatbox:hover{
+  background-color: #61dafb;
+  cursor: pointer;
+}
+
+.chatbar{
+  margin-left: 20px;
+  width: 20%;
+}
+
+.conntainerU {
+  justify-items: left;
+}
+
+
+
+.Home .nav {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.Home  .ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+.nav-links {
+  margin-top: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+ 
+  padding: 0;
+  list-style: none;
+}
+
+.logo-nav-container .li .image{
+  margin-left: auto;
+  background-color: #000000;
+}
+
+.Home nav li{
+  margin: 0 10px;
+}
+
+.Home nav a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.Home .logo-nav-container .logo {
+  margin-right: auto;
+}
+
+.Home .logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-image{
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.logo-nav-containter{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+
+.Info{
+  padding-top: 2rem;
+}
+
+.Heading{
+  color: black;
+}
+
+.Heading::nth-of-type(3){
+  color: rgb(109, 209, 100);
+}
+
+.Info{
+  text-align: left;
+  padding-left: 10rem;
+}
+.HeadingText{
+  font-size: 1px;
+}
+
+.HomeImg{
+  position: absolute;
+  right: 2rem;
+  top: 12rem;
+  float: right;
+  
+}
+
+.HomeImg img {
+  width: 400px;
+  height: auto;
+}
+.circle-img {
+  border-radius: 40px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.circle-img-box {
+  position: relative;
+  top: 100px;
+  width: 180px;
+  height: 50px;
+  right:50px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  flex-direction: row;
+  background-color: white;
+}
+
+.loading-circle {
+  
+  position: absolute;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+  right: auto;
+  left: 0;
+  
+}
+
+.circle-img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.circle-img-text {
+  position: absolute;
+  bottom: -35px;
+  width: 200px;
+  height: 40px;
+ 
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.home-img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.CategoryBoxes{
+  display: flex;
+}
+
+
+.Category {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.CategoryBox {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CategoryBox img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.CategoryBox h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.CategoryBox p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.CategoryText {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.CategoryText img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+
+.Register {
+  margin: 50px auto;
+  max-width: 800px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+}
+.register-form {
+  display: flex;
+  align-items: center;
+}
+
+.register-from label {
+  display: inline-block;
+  width: 90px;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.register-from input {
+  display: inline-block;
+  margin-right: 10px;
+  width: 300px;
+}
+.register-form label {
+  margin-right: 0.5rem;
+}
+
+.register-form input,
+.register-form select {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f5f5f5;
+  margin-top: 5px;
+}
+
+.btn-primary {
+  background-color: #67b96b !important;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #3e8e41;
+}
+
+.register-form label[for="password"] {
+  text-align: left;
+}
