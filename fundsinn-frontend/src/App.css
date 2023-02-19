@@ -432,6 +432,8 @@ li{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10px;
+  margin-right: 2rem;
 }
 
 .CategoryBox img {
@@ -456,6 +458,7 @@ li{
   margin: 0 10px;
   display: flex;
   align-items: center;
+  
 }
 
 .CategoryText img {

@@ -95,6 +95,7 @@ function Home() {
               Sign In
             </Button>{" "}
           </Link>
+        
           <div className="HomeImg">
             <div className="circle-img-box">
               <div className="loading-circle"></div>
@@ -130,7 +131,7 @@ function Home() {
 
             <div className="CategoryBoxes">
               <div className="CategoryBox">
-                <img src={Health} alt="Health" className="CategoryImg" style={{ width: "80px", height: "80px" , marginTop:"-13x"}}></img>
+                <img src={Health} alt="Health" className="CategoryImg" style={{ width: "80px", height: "65px" , marginTop:"-15px"}}></img>
                 <p className="CategoryText">Health</p>
                 
               </div>
